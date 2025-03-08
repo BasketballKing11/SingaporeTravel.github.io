@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="../Image/favicon.ico.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Register</title>
+</head>
+<body class="dark_red">
+    <header class="header">
+    <div class="header_content">
+        <a href="../Overview/main.html" class="logo">
+            <img class="logo_img" src="../Singapore_Travels.png" alt="logo">
+        </a>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="../Resorts/resorts.html" class="nav_link">Resorts</a>
+                </li>
+                <li class="nav_item">
+                    <a href="../Activities/activities.html" class="nav_link">Activities</a>
+                </li>
+                <li class="nav_item">
+                    <a href="../History/history.html" class="nav_link">History</a>
+                </li>
+                <li class="nav_item">
+                    <a href="../Culture/culture.html" class="nav_link">Culture</a>
+                </li>
+                <li class="nav_item">
+                    <a href="register.html" class="nav_link">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <article>
+        <section>
+            <h1>Tour Packages</h1>
+            <img class="img_bundle" src="marina_bundle.png" alt="Marina Bay Sands Bundle">
+            <img class="img_bundle" src="Capella_bundle.png" alt="Capella Resort Bundle">
+            <img class="img_bundle" src="ware_bundle.png" alt="The Warehouse Hotel Bundle">
+            <img class="img_bundle" src="orch_bundle.png" alt="Jen Singapore OrchardGate Bundle">
+            <img class="img_bundle" src="ben_bundle.png" alt="Hotel Bencoolen Bundle">
+            <h2 style="text-align: center;">Register Here</h2>
+            <form action="https://formspree.io/f/manewdbv" method="post" class="bundle_form">
+
+                <label for="name">Name (First and Last)</label>
+                <input type="text" id="name" placeholder="John Doe" name="Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="johndoe@gmail.com" name="Email" required>
+
+                <label for="bundle">Which Bundle Would You Like to Select?</label>
+                <select name="Bundle" id="bundle">
+                    <option>No Bundle</option>
+                    <option>Marina Sands Bundle</option>
+                    <option>Capella Singapore Bundle</option>
+                    <option>The Warehouse Bundle</option>
+                    <option>Jen Singapore OrchardGate Bundle</option>
+                    <option>Hotel Bencoolen Bundle</option>
+                </select>
+
+                <label for="fly">Are Your Traveling By Air?</label>
+                <select name="Fly" id="fly">
+                    <option>No</option>
+                    <option>Economy ($1,300 Per Person)</option>
+                    <option>Business ($5,600 Per Person)</option>
+                    <option>First Class ($21,000 Per Person)</option>
+                </select>
+
+                <label for="people">How Many People Are Traveling?</label>
+                <select name="People" id="people">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                </select>
+
+                <label for="calendar">When Do You Plan to Arrive?</label>
+                <input type="date" id="calendar" name="Arrival">
+
+                <label for="calendar2">When Do You Plan to Leave?</label>
+                <input type="date" id="calendar2" name="Leaving">
+
+                <button type="submit" id="submit_btn">Submit</button>
+                <button type="reset" id="reset_btn">Reset</button>
+            </form>
+        </section>
+    </article>
+    <footer class="footer">
+        <!--Very complicated but cool footer-->
+        <div class="contain">
+            <div class="row">
+                <div class="footer_col">
+                    <h4>Citations</h4>
+                    <ul>
+                        <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://www.britannica.com" target="_blank">Britanica</a></li>
+                        <li><a href="https://www.goway.com" target="_blank">Goway</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Help</h4>
+                    <ul>
+                        <!--Dummy Links, you really think we could afford a help page?-->
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Booking Status</a></li>
+                        <li><a href="">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Follow Us</h4>
+                    <div class="social_links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
